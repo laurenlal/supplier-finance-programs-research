@@ -6,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 import requests
 import os 
-from cleanse import sfp
+from scripts.archive.cleanse import sfp
 
 
 # credentials used by calcbench

@@ -1,13 +1,16 @@
 
+import os
+
 import calcbench as cb
 import pandas as pd
 from tqdm import tqdm
 import requests
-from cleanse import sfp
+from scripts.archive.cleanse import sfp
 
+CALCBENCH_USER = os.environ.get('CALCBENCH_USER')
+CALCBENCH_PASS = os.environ.get('CALCBENCH_PASS')
 
-
-cb.set_credentials("jdmathis@iu.edu", "9Cte&G}n5DTvgn")
+cb.set_credentials(CALCBENCH_USER, CALCBENCH_PASS)
 
 
 
