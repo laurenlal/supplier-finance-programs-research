@@ -5,7 +5,7 @@ import calcbench as cb
 import pandas as pd
 from tqdm import tqdm
 import requests
-from scripts.archive.cleanse import sfp
+from archive.scripts.archive.cleanse import sfp
 
 CALCBENCH_USER = os.environ.get('CALCBENCH_USER')
 CALCBENCH_PASS = os.environ.get('CALCBENCH_PASS')
