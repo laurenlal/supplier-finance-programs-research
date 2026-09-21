@@ -1,16 +1,18 @@
 import pandas as pd
 import numpy as np
 import calcbench as cb
+import os
 
 """
 This file is for developing a headcount of all firms in the universe
 """
 
-
+CALCBENCH_USER = os.environ.get('CALCBENCH_USER')
+CALCBENCH_PASS = os.environ.get('CALCBENCH_PASS')
 
 #---------Connect to Calcbench-----------
 try:
-
+    cb.set_credentials(CALCBENCH_USER, CALCBENCH_PASS)
     print(f"Connected to Calcbench")
 except Exception as e:
     print(f"Error setting credentials: {e}")
