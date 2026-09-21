@@ -1,0 +1,33 @@
+name: 'sfp_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+# Must match the top-level name in profiles.yml
+profile: 'default'
+
+# Where dbt should look for things
+model-paths: ["models"]
+# analysis-paths: ["analyses"]
+# test-paths: ["tests"]
+# seed-paths: ["seeds"]
+macro-paths: ["macros"]
+# snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  sfp_dbt_project:
+
+    # Raw Snowflake data -> cleaned/standardized
+    staging:
+      +materialized: view
+
+    # # Business logic / transformations
+    # intermediate:
+    #   +materialized: view
+
+    # # Final analysis-ready tables
+    # marts:
+    #   +materialized: table

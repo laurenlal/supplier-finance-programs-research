@@ -1,0 +1,11 @@
+calcbench-api-client
+pandas
+numpy
+dotenv
+backoff
+datetime
+dbt
+dbt-snowflake
+snowflake-connector-python[pandas]
+python-dotenv
+
