@@ -10,7 +10,7 @@ This file is for developing a headcount of all firms in the universe
 
 #---------Connect to Calcbench-----------
 try:
-    cb.set_credentials("jdmathis@iu.edu", "9Cte&G}n5DTvgn")
+
     print(f"Connected to Calcbench")
 except Exception as e:
     print(f"Error setting credentials: {e}")
