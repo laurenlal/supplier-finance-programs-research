@@ -1,0 +1,30 @@
+# Secrets
+.env
+.env.*
+profiles.yml
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# dbt
+dbt_packages/
+dbt_internal_packages/
+target/
+logs/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+
+# dbt user config
+.user.yml
+
+
+sfp_dbt_project/target/
+sfp_dbt_project/logs/
+sfp_dbt_project/dbt_packages/
